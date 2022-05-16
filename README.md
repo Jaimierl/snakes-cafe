@@ -5,7 +5,7 @@ This is an app that displays a menu and returns the orders that the customer inp
 # Author: Jae Loney
 
 # References: 
-Stack Overflow to make the quit capability work
+Stack Overflow to make the quit capability work, W3 Schools for help returning the items ordered
 
 # Reflections:
 Glad to write something that works!

@@ -35,22 +35,32 @@ Unicorn Tears
 ** What would you like to order? **
 ***********************************
 """
+# Three Quotes are needed to print something with its existing formatting. 
 
 print(intro)
 
+menu = ['Wings', 'Cookies', 'Spring Rolls', 'Salmon', 'Steak', 'Meat Tornado', 'A Literal Garden', 'Ice Cream', 'Cake', 'Pie', 'Coffee', 'Tea', 'Unicorn Tears' ]
+    # Menu of options in a list
+order = []
+    # Menu of what the user chooses in a list
+
 party_on=True
+# This is the variable set to run the program while there are inputs and quit if quit is called from the elif. 
 while party_on:
-    food = input("> ")
-
-    menu = ['Wings', 'Cookies', 'Spring Rolls', 'Salmon', 'Steak', 'Meat Tornado', 'A Literal Garden', 'Ice Cream', 'Cake', 'Pie', 'Coffee', 'Tea', 'Unicorn Tears' ]
-
+    food = input("> ") # Lets have this cool prompt icon for the user to input their choices
 
     if food in menu:
+        order=order.append(food)
+        #Add the user choice to the user choice list
         print ('**1 order of '+ food +' has been added to your meal**')
+
+        print ('So far you have ordered: ')
+        print (order)
 
     if food == 'quit':
         party_on = False
         print('Goodbye')
+        exit()
 
     elif food not in menu:
         print ('Sorry, that is not on the menu.')
