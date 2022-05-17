@@ -50,9 +50,10 @@ while party_on:
     food = input("> ") # Lets have this cool prompt icon for the user to input their choices
 
     if food in menu:
-        order=order.append(food)
+        order.append(food)
         #Add the user choice to the user choice list
-        print ('**1 order of '+ food +' has been added to your meal**')
+        times=order.count(food)
+        print ('** ' + str(times) +' order(s) of '+ food +' has been added to your meal**')
 
         print ('So far you have ordered: ')
         print (order)
