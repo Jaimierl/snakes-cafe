@@ -6,7 +6,7 @@ This is an app that displays a menu and returns the orders that the customer inp
 ## Author: Jae Loney
 
 ## Setup
-python snakes_cafe.py
+run with python snakes_cafe.py
 
 ## References: 
 Stack Overflow to make the quit capability work, W3 Schools for help returning the items ordered
